@@ -8,4 +8,4 @@ Features:
 5. reset filters
 6. saving settings to local storage
 
-Deploy: https://rolling-scopes-school.github.io/mariia22-JSFE2022Q1/online-store/
+Deploy: https://rolling-scopes-school.github.io/mariia22-JSFE2022Q1/store/
