@@ -1,0 +1,27 @@
+#filter__number__start, #filter__number__end, #filter__year__start, #filter__year__end {
+  display: none;
+}
+
+#slider__number.noUi-target,
+#slider__year.noUi-target{
+  background: $color-black;
+  height: 8px;
+  border:none;
+}
+
+#slider__number>.noUi-base>.noUi-origin>.noUi-handle,
+#slider__year>.noUi-base>.noUi-origin>.noUi-handle{
+  background-color: $color-black;
+  border-radius: 50%;
+  border:none;
+  width: 20px;
+  height: 20px;
+  box-shadow: none;
+}
+
+#slider__number>.noUi-base>.noUi-origin>.noUi-handle:before,
+#slider__year>.noUi-base>.noUi-origin>.noUi-handle:before,
+#slider__number>.noUi-base>.noUi-origin>.noUi-handle:after,
+#slider__year>.noUi-base>.noUi-origin>.noUi-handle:after {
+  display: none;
+}

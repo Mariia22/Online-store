@@ -1,0 +1,18 @@
+.product__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  border-top: 1px solid $color-bg-footer;
+  gap: 15px 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @include media-tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include media-mobile {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}

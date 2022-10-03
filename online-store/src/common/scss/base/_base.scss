@@ -1,0 +1,114 @@
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('./assets/font/Georgia.woff2') format('woff2'), 
+  url('./assets/font/Georgia.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('./assets/font/Georgia-Bold.woff2') format('woff2'),
+    url('./assets/font/Georgia-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url('./assets/font/Arial.woff2') format('woff2'),
+    url('./assets/font/Arial.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  @extend %font-prim;
+  @include font($size: 1rem, $lineheight: 1.6rem, $weight: normal);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: $color-bg;
+  color: $color-black;
+}
+
+.wrapper {
+  max-width: $content-width;
+  width: 100%;
+  padding: 0 40px;
+  margin: 0 auto;
+
+  @include media-tablet {
+    padding: 0 30px;
+  }
+
+  @include media-mobile {
+    padding: 0 10px;
+  }
+}
+
+.button {
+  @extend %font-add;
+  @include font($lineheight: 1.47rem, $size: 1rem, $weight: 400);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: $color-btn-bg;
+  color: $color-white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-highlight-light;
+    border: none;
+  }
+}
+
+.filter__button {
+  @extend %font-prim;
+  @include font($lineheight: 1.47rem, $size: 1rem, $weight: 400);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  padding: 5px;
+  background-color: $color-black;
+  color: $color-white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    border: none;
+  }
+}
+
+.button__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.pressed {
+  background-color: $color-black;
+}
+
+h2 {
+  margin-bottom: 0;
+}

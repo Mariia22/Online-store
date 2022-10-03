@@ -1,0 +1,14 @@
+.cart {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart__name, .cart__number{
+  padding: 10px;
+  border-bottom: 1px solid $color-bg;
+}
+
+.cart__name {
+  width: 150px;
+
+}

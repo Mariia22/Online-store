@@ -1,0 +1,92 @@
+.active {
+  background-color: $color-border;
+}
+
+.filter__producer, .filter__size, .filter__color {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.filter__head {
+  width: 100%;
+}
+
+.black,
+.black:hover {
+  background-color: $color-black;
+  border-radius: 50%;
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+
+.gold,
+.gold:hover {
+  background-color: $color-gold;
+  border-radius: 50%;
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+
+.green,
+.green:hover {
+  background-color: $color-green;
+  border-radius: 50%;
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+
+.lily,
+.lily:hover {
+  background-color: $color-lily;
+  border-radius: 50%;
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+
+.nude,
+.nude:hover {
+  background-color: $color-nude;
+  border-radius: 50%;
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+
+.olive,
+.olive:hover {
+  background-color: $color-olive;
+  border-radius: 50%;
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+
+.pink,
+.pink:hover {
+  background-color: $color-pink;
+  border-radius: 50%;
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+
+.red,
+.red:hover {
+  background-color: $color-red;
+  border-radius: 50%;
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+
+.pressed::after{
+  content: "✓";
+  color: $color-white;
+  position: absolute;
+}

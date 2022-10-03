@@ -1,0 +1,31 @@
+// Abstract
+@import 'common/scss/abstract/variables';
+@import 'common/scss/abstract/mixin';
+@import 'common/scss/abstract/placeholder';
+
+//Base
+@import 'common/scss/base/base';
+@import 'common/scss/base/normalize';
+
+//Layouts
+@import 'common/scss/layouts/header.scss';
+@import 'common/scss/layouts/footer.scss';
+
+//View
+@import 'components/view/page-components/page.scss';
+
+//Header
+@import 'components/view/search-components/search.scss';
+@import 'components/view/cart-list/cart-list.scss';
+@import 'components/view/cart-components/cart.scss';
+
+//Aside
+@import 'components/view/aside-components/aside.scss';
+@import 'components/view/filters-components/filter-list/filter-list.scss';
+@import 'components/view/filter-checkbox/filter-checkbox.scss';
+@import 'components/view/sort-field/sort-field.scss';
+@import 'components/view/filters-components/range-filter-list/range-filter-list.scss';
+
+//Product
+@import 'components/view/product-list/product-list.scss';
+@import 'components/view/product-components/product.scss';
